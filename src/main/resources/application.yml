@@ -1,0 +1,23 @@
+spring-webflux:
+  database:
+    host: 127.0.0.1
+    port: 5435
+    name: db
+    schema: public
+    username: admin
+    password: admin
+    pool:
+      size:
+        initial: 3
+        max: 10
+
+spring:
+  flyway:
+    enabled: true
+    url: jdbc:postgresql://127.0.0.1:5435/db
+    user: admin
+    password: admin
+    baseline-version: 0
+
+server:
+  port: 8081
